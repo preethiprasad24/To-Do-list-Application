@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
+
+body {
+font-family: "Caveat", cursive;
+display:flex;
+justify-content:center;
+align-items: center;
+min-height:100vh;
+background:url("./image/3d-cartoon-night-sky.jpg") no-repeat center center/cover;   
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    width: 1000px;
+    padding:0 20px;  
+}
+
+.todo
+{   width:100%;
+    max-width:400px;
+    padding:2rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 30px;
+    color:rgb(246, 249, 252);
+    border-radius:30px;
+    box-shadow:0px;
+    border:3px solid rgb(77, 76, 76);
+    backdrop-filter:blur(5px);
+}
+
+.todo h1{
+font-size:2rem;
+}
+
+.inputarea{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    border-radius:60px;
+}
+
+#task-input{
+
+flex:1;
+padding:10px 17px;
+font-size:1.1rem;
+border:none;
+outline:none;
+border-radius:40px;
+background:rgb(250, 138, 158);
+color:grey;
+}
+
+#task-input ::placeholder {
+color:rgb(239, 232, 232);
+}
+
+#add-task-btn
+{position:relative;
+left: 255px;
+bottom:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin: left 10px;
+padding:8px;
+border-radius:50%;
+color:rgb(28, 25, 25);
+font-size:1.1rem;
+background:rgb(241, 189, 229);
+box-shadow: 0 9px 10px rgba(246, 224, 224, 0.25);
+cursor:pointer;
+transition:all 0.2s ease;
+}
+
+#add-task-btn:hover {
+    transform:scale(1.1);
+    background:rgb(202, 153, 153);
+}
+
+.todos-container {
+width:100%;
+display: flex;
+align-items:center;
+justify-content: center;
+}
+
+#task-list{
+    width:100%;
+}
+
+li{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ background:rgb(237, 183, 237);
+ margin-bottom:10px;
+ padding: 8px 10px;
+ border-radius:30px;
+ font-size:1.2rem;
+ color:rgb(12, 11, 12);
+ position:relative;
+ transition:box-shadow 0.2s ease;
+}
+
+.li:hover{
+ box-shadow:0 0 10px black;
+
+}
+
+
+span{
+    flex:1;
+    margin-left:10px;
+    word-wrap:break-word;
+}
+
+
+.task-buttons{
+    display:felx;
+    gap:10px;
+    margin-right:auto;
+
+}
+
+task-buttons.button{
+background:rgb(160, 121, 160);
+border:none;
+border-radius:50%;
+ width:30px;
+ height:30px;
+ color:white;
+ font-size:0.8rem;
+ cursor:pointer;
+ transition:all 0.2s ease;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+
+}
+
+
+ button:hover{
+    transform:scale(1.2);
+
+}
+
+.delete-btn{
+    background:rgb(147, 132, 229);
+
+}
+
+.edit-btn{
+    background:rgb(133, 214, 234);
+
+}
+
+
